@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom|right"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/calculator" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Enter first number"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Enter second number"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Result"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/badd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="fadd"
+        android:padding="10dp"
+        android:text="ADD" />
+
+    <Button
+        android:id="@+id/bsub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="fsub"
+        android:padding="10dp"
+        android:text="SUB" />
+
+    <Button
+        android:id="@+id/bmul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="fmul"
+        android:padding="10dp"
+        android:text="MUL" />
+
+    <Button
+        android:id="@+id/bdiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="fdiv"
+        android:padding="10dp"
+        android:text="DIV" />
+
+    <TextView
+        android:id="@+id/cc"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="200dp"
+        android:text="My first android app :D"
+        android:textSize="10sp" />
+</LinearLayout>
